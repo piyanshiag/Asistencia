@@ -1,0 +1,116 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+	  <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+   
+   <link rel="stylesheet" href="..\static\recognition\img\theme.css">
+
+<script  type='text/javascript'
+src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'>
+$(document).ready(function(){
+  $("#train").click(function(){
+    alert("Training begun. This may take upto 5 minutes. Please wait.");
+  });
+});
+</script>
+	
+</head>
+<body>
+   
+    <div class="col-sm-12 text-right">
+      <div class="align-right">
+       <a href="{% url 'logout' %}" class="btn btn-primary">Logout</a>
+      </div>
+    </div>
+        
+
+
+
+
+
+<div class="page-section" id="service">
+        
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="card-service wow fadeInUp">
+          <div class="header">
+            <img src="..\static\recognition\img\features-04.svg" alt="">
+          </div>
+          <div class="body">
+            <h5 class="text-secondary">Register new employees</h5>
+            <a href="{%url 'register' %}"class="btn btn-primary">Register</a>
+            
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="card-service wow fadeInUp">
+          <div class="header">
+            <img src="..\static\recognition\img\features-03.svg" alt="">
+          </div>
+          <div class="body">
+            <h5 class="text-secondary">Add photos</h5>
+            
+            <a href="{%url 'add-photos'%}" class="btn btn-primary">Add</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="card-service wow fadeInUp">
+          <div class="header">
+            <img src="..\static\recognition\img\features-01.svg" alt="">
+          </div>
+          <div class="body">
+            <h5 class="text-secondary">Train</h5>
+            
+            <a href="{%url 'train' %}" class="btn btn-primary">Train</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="card-service wow fadeInUp">
+          <div class="header">
+            <img src="..\static\recognition\img\features-02.svg" alt="">
+          </div>
+          <div class="body">
+            <h5 class="text-secondary">View attendance reports</h5>
+            
+            <a href="{%url 'view-attendance-home' %}" class="btn btn-primary">View</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> <!-- .container -->
+</div> <!-- .page-section -->
+
+ {% if messages %}
+      {% for message in messages%}
+      <div class="alert alert-{{message.tags}}" > {{message}}
+      </div>
+      {%endfor %}
+
+    {%endif%}
+
+
+</div>
+
+
+
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

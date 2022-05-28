@@ -1,0 +1,145 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Automatic Attendance</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="..\static\recognition\img\theme.css">
+
+
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky" data-offset="500">
+      <div class="container">
+        <a href="#" class="navbar-brand">Asis<span class="text-primary">tencia</span></a>
+
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse" id="navbarContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href='{%url "login" %}'>Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#service">Services</a>
+            </li>
+            
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+<section
+    <div class="container">
+      <div class="page-banner home-banner">
+        <div class="row align-items-center flex-wrap-reverse h-100">
+          <div class="col-md-6 py-5 wow fadeInLeft">
+            <h1 class="mb-4">Let's Check Your Attendance</h1>
+            <p class="text-lg text-grey mb-5">Mark and view your attendance</p>
+          </div>
+          <div class="col-md-6 py-5 wow zoomIn">
+            <div class="img-fluid text-center">
+                <img src="..\static\recognition\img\banner.svg"
+            </div>
+          </div>
+        </div>
+        <a href="#service" class="btn-scroll" data-role="smoothscroll"><span class="mai-arrow-down"></span></a>
+      </div>
+    </div>
+  </header>
+
+
+    
+
+        <div class="col-lg-12" style="padding-top: 100px;">
+            {% if messages %} {% for message in messages%}
+            <div class="alert alert-{{message.tags}}"> {{message}}
+            </div>
+            {%endfor %} {%endif%}
+        </div>
+
+
+     <div class="page-section" id="service">
+        
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-4">
+                  <div class="card-service wow fadeInUp">
+                    <div class="header">
+                      <img src="..\static\recognition\img\login-front.svg" alt="">
+                    </div>
+                    <div class="body">
+                      <h5 class="text-secondary">Mark Your Attendance - In</h5>
+                      <a href='{%url "mark-your-attendance" %}'class="btn btn-primary">Mark</a>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="card-service wow fadeInUp">
+                    <div class="header">
+                      <img src="..\static\recognition\img\logout-front.svg" alt="">
+                    </div>
+                    <div class="body">
+                      <h5 class="text-secondary">Mark Your Attendance - Out</h5>
+                      
+                      <a href='{%url "mark-your-attendance-out" %}' class="btn btn-primary">Mark</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="card-service wow fadeInUp">
+                    <div class="header">
+                      <img src="..\static\recognition\img\user-front.svg" alt="">
+                    </div>
+                    <div class="body">
+                      <h5 class="text-secondary">Log In</h5>
+                      
+                      <a href='{%url "login" %}' class="btn btn-primary">Log In</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> <!-- .container -->
+          </div> <!-- .page-section -->
+        <div class="row">
+
+
+           
+
+
+        </div>
+    
+
+    </div>
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
