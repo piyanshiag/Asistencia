@@ -1,16 +1,15 @@
 # Asistencia
 
-Asistencia is an attendance system which uses facial recognition to mark the in-time, and out-time of employees. It covers areas such as facial detection, alignment, and recognition, along with the development of a web application to cater to various use cases of the system such as registration of new employees, addition of photos to the training dataset, viewing attendance reports, etc. Admin can view attendance reports by using filters based on employee name and date. User can also their attendance using filters.
+Asistencia is an attendance system which uses facial recognition to mark the in-time, and out-time of employees. It covers areas such as facial detection, alignment, and recognition, along with the development of a web application to cater to various use cases of the system such as registration of new employees, addition of photos to the training dataset, viewing attendance reports, etc. Admin can view attendance reports by using filters based on employee name and date. User can also their attendance by date.
 There are various graphs indicating the attendance reports of employees.
 
-### Refer to this for admin user id and password.
+### Refer to [this] for admin user id and password. 
+[this]: https://github.com/piyanshiag/Asistencia/blob/master/automatic_attendance/passwords.txt
 
-## Technologies:
-1. Python
-2. Django
-3. HTML
-4. CSS
-5. Javascript
+### Tools and languages:
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white) ![OpenCV](https://img.shields.io/badge/opencv-%23white.svg?style=for-the-badge&logo=opencv&logoColor=white) ![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white) ![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white) 
+
+
 
 ## Face Detection
 Dlib's HOG facial detector.
