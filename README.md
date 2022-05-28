@@ -31,6 +31,11 @@ using a Linear SVM (scikit-learn)
    ```
 3. Activate the environment and get inside folder automatic_attendance
 4. Install the requirements
+   For DLIB to work, install [visual studio] and then install **Desktop development with C++** while setting up Visual Studio
+   
+   [visual studio]: https://visualstudio.microsoft.com/
+   
+   Next:
    ```
    pip install -r requirements.txt
    ```
