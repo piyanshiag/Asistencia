@@ -50,6 +50,10 @@ using a Linear SVM (scikit-learn)
    
    [visual studio]: https://visualstudio.microsoft.com/
    
+   Follow [this] to install CMake and DLIB
+   
+   [this]: https://medium.com/analytics-vidhya/how-to-install-dlib-library-for-python-in-windows-10-57348ba1117f
+   
    Next:
    ```
    pip install -r requirements.txt
