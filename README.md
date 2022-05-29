@@ -62,3 +62,13 @@ using a Linear SVM (scikit-learn)
    ```
    python manage.py runserver
    ```
+   
+   
+## Document
+1. [Complete guide]
+
+[Complete guide]: https://docs.google.com/document/d/1MDieXvpvvUkYJecjwDdaxTfEkUusuEBngE4ZM-Hra2k/edit?usp=sharing
+
+2. [Video demo]
+
+[Video demo]:
