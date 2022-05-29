@@ -71,4 +71,4 @@ using a Linear SVM (scikit-learn)
 
 2. [Video demo]
 
-[Video demo]:
+[Video demo]: https://youtu.be/YYeW-1cY5yQ
